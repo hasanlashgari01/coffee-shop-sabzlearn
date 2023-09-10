@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+    div, a, span, button {
+        @apply max-md:cursor-none !important;
+    }
+
     /* Dana */
     @font-face {
         font-family: "Dana";  /* 400 */

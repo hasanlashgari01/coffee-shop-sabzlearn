@@ -7,7 +7,7 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <link href="images/fav-icon.png" rel="shortcut icon" type="image/x-icon" />
     <!--  CSS  -->
-    <link href="styles/final.css" rel="stylesheet" />
+    <link href="styles/app.css" rel="stylesheet" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <!-- JS Theme -->
@@ -331,13 +331,13 @@
 </header>
 <div class="sticky top-0 z-50 flex md:hidden items-center justify-between bg-white dark:bg-zinc-700 px-4 h-16 transition-custom">
     <!--  Nav Icon  -->
-    <div class="cursor-pointer" id="hamburger">
+    <div class="cursor-none" id="hamburger">
         <svg class="w-6 h-6 text-zinc-700 dark:text-white">
             <use href="#bars-3"></use>
         </svg>
     </div>
     <!--  Nav  -->
-    <div class="fixed translate-x-full top-0 bottom-0 right-0 w-64 pt-3 px-4 bg-white dark:bg-zinc-700 z-20 overflow-auto transition-all duration-500 ease-linear" id="mobile-nav">
+    <div class="fixed translate-x-full top-0 bottom-0 right-0 w-64 pt-3 px-4 bg-white dark:bg-zinc-700 z-20 overflow-auto transition-all duration-500 ease-linear cursor-none" id="mobile-nav">
         <!--  Nav Header  -->
         <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10 transition-all duration-300 ease-linear">
             <div class="flex gap-x-3.5">
@@ -348,7 +348,7 @@
                     <use href="#logo-type"></use>
                 </svg>
             </div>
-            <svg class="w-5 h-5 text-zinc-600 dark:text-white cursor-pointer" id="close-hamburger">
+            <svg class="w-5 h-5 text-zinc-600 dark:text-white" id="close-hamburger">
                 <use href="#x-mark"></use>
             </svg>
         </div>
@@ -455,23 +455,23 @@
         </div>
     </div>
     <!--  Logo Type  -->
-    <a class="text-orange-300" href="#">
+    <a class="text-orange-300 cursor-none" href="#">
         <svg class="w-[100px] h-10 text-orange-400">
             <use href="#logo-type"></use>
         </svg>
     </a>
     <!--  Cart Icon  -->
-    <div id="cart-btn">
+    <div id="cart-btn" class="cursor-none">
         <svg class="w-6 h-6 text-zinc-700 dark:text-white">
             <use href="#shopping-cart"></use>
         </svg>
     </div>
     <!--  Cart	-->
-    <div class="fixed top-0 bottom-0 left-0 flex-col w-64 pt-5 px-4 bg-white dark:bg-zinc-700 z-20 overflow-auto -translate-x-full transition-all duration-500 ease-linear" id="cart-nav">
+    <div class="fixed top-0 bottom-0 left-0 flex-col w-64 pt-5 px-4 bg-white dark:bg-zinc-700 z-20 overflow-auto -translate-x-full transition-all duration-500 ease-linear cursor-none" id="cart-nav">
         <!--  Cart Header  -->
         <div class="flex justify-between items-center pb-[21px] mb-5 border-b border-b-gray-300 dark:border-b-white/10 transition-all duration-300 ease-linear">
             <div id="cart-close-btn">
-                <svg class="w-5 h-5 text-zinc-400 dark:text-white cursor-pointer">
+                <svg class="w-5 h-5 text-zinc-400 dark:text-white">
                     <use href="#x-mark"></use>
                 </svg>
             </div>
